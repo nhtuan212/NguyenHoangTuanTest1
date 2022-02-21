@@ -6,7 +6,7 @@
 *,::after,::before{box-sizing:border-box}
 h1,h2,h3,h4,h5{margin:0}
 body{font-family:CalibreLight;color:var(--color);line-height:1.5}
-img{width:100%}
+img{max-width:100%}
 .name{margin-bottom:.25rem;font:28px var(--semibold-font)}
 .index-cover{padding:1rem 0}
 .container{max-width:1100px;margin:auto}
@@ -33,6 +33,9 @@ img{width:100%}
 .learning .title{margin-bottom:5rem}
 .learning .col-6{padding-top:2rem;padding-bottom:2rem}
 .learning-items .img{min-height:310px}
+@media only screen and (max-width:1349px){
+    .name{font-size:1.5rem;}
+}
 @media only screen and (max-width:1200px){
     .row{margin:0}
 }
@@ -42,7 +45,6 @@ img{width:100%}
     .widget-items{position:static;width:50%;padding:.5rem 0}
     .widget-items .img{width:125px;text-align:center}
     .widget-items .info{width:calc(100% - 125px)}
-    .name{font-size:1.5rem;}
 }
 @media only screen and (max-width:700px){
     .title{font-size: 2rem;}
